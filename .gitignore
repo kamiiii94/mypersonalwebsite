@@ -1,0 +1,39 @@
+# Python bytecode / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Environment & secrets
+.env
+.env.*
+venv/
+.venv/
+env/
+ENV/
+
+# Static & media
+# منبع static پروژه رو نگه دار، اما خروجی جمع‌آوری‌شده (STATIC_ROOT) رو نادیده بگیر
+staticfiles/
+# اگر پوشه media داری، معمولاً در گیت نگه نمی‌داریم
+media/
+!media/.gitkeep
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Node (اگر ابزار فرانت استفاده می‌کنی)
+node_modules/
+
+# Tests / coverage (اختیاری)
+.pytest_cache/
+.coverage
+htmlcov/

@@ -1,0 +1,154 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block title %}خانه{% endblock %}
+
+{% block extra_css %}
+<style>
+  /* تصاویر کارت‌ها (تکنولوژی و یادگیری) */
+  .card-img-top {
+    max-width: 100%;
+    max-height: 140px;
+    object-fit: contain;
+    background-color: #f0f4f8;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    padding: 10px;
+  }
+
+  /* ارتفاع بدنه کارت برای هماهنگی */
+  .card-body {
+    min-height: 120px;
+  }
+
+  /* فاصله بخش تکنولوژی‌ها */
+  #technologies-section {
+    margin-top: 40px;
+  }
+
+  /* اسلایدر عمومی */
+  .swiper-container {
+    padding: 15px 0;
+  }
+  .swiper-slide {
+    width: 220px !important; /* هم‌اندازه شدن کارت‌ها */
+  }
+
+  /* کارت‌های تکنولوژی */
+  .tech-swiper .card {
+    height: 100%;
+    background-color: #e9f0f7;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .tech-swiper .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+
+  /* کارت‌های در حال یادگیری (رنگ کمی متفاوت) */
+  .learning-swiper .card {
+    height: 100%;
+    background-color: #fff3e0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .learning-swiper .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- معرفی -->
+<div class="row align-items-center">
+  <div class="col-md-4 text-center">
+    <img src="{% static 'portfolio/profile.jpg' %}" class="img-fluid rounded-circle" alt="عکس من" style="max-width: 200px;">
+  </div>
+  <div class="col-md-8">
+    <h2>سلام! خوش آمدید. من سعید کامرانی هستم</h2>
+    <p>
+      این سایت را برای آشنایی بهتر شما با خودم طراحی کردم. میتوانید از بخش های مختلف ، پروژه های انجام شده و اطلاعات آن ها ، تحصیلات من ، علاقه مندی های من و راه های ارتباط با من را مشاهده کنید.
+    </p>
+  </div>
+</div>
+
+<hr>
+
+<!-- بخش تکنولوژی‌ها با اسلایدر -->
+<h3 id="technologies-section">تکنولوژی‌ها</h3>
+<div class="swiper-container tech-swiper">
+  <div class="swiper-wrapper">
+    {% for tech in technologies %}
+      <div class="swiper-slide">
+        <div class="card h-100 shadow-sm text-center">
+          {% if tech.image %}
+            <img src="{{ tech.image.url }}" class="card-img-top mx-auto" alt="{{ tech.name }}">
+          {% endif %}
+          <div class="card-body">
+            <h5 class="card-title">{{ tech.name }}</h5>
+            <p class="card-text" style="font-size: 0.9rem;">{{ tech.description|truncatechars:80 }}</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="{% url 'technology_projects' tech.id %}" class="btn btn-sm btn-outline-primary w-100">مشاهده پروژه‌ها</a>
+          </div>
+        </div>
+      </div>
+    {% empty %}
+      <p>تکنولوژی‌ای ثبت نشده.</p>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- بخش در حال یادگیری با اسلایدر هم‌استایل -->
+<h3 id="learning-section" class="mt-5">مواردی که در حال یادگیری هستم</h3>
+<div class="swiper-container learning-swiper">
+  <div class="swiper-wrapper">
+    {% for item in learning_items %}
+      <div class="swiper-slide">
+        <div class="card h-100 text-center shadow-sm">
+          {% if item.image %}
+            <img src="{{ item.image.url }}" class="card-img-top mx-auto" alt="{{ item.title }}">
+          {% endif %}
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <p class="card-text" style="font-size: 0.9rem;">{{ item.description|truncatechars:80 }}</p>
+          </div>
+        </div>
+      </div>
+    {% empty %}
+      <p>فعلاً چیزی اضافه نشده است.</p>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  // اسلایدر تکنولوژی‌ها
+  var swiperTech = new Swiper('.tech-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+  });
+
+  // اسلایدر در حال یادگیری
+  var swiperLearning = new Swiper('.learning-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+  });
+</script>
+{% endblock %}

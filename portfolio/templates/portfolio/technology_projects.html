@@ -1,0 +1,61 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="container mt-4">
+    <h2>پروژه‌های مربوط به تکنولوژی {{ technology.name }}</h2>
+
+    <div class="row mt-4">
+      {% for project in projects %}
+        {% for image in project.images.all %}
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100 shadow-sm">
+
+              <!-- قاب ثابت برای تصویر -->
+              <div class="image-wrapper">
+                <img src="{{ image.image.url }}" alt="Project image">
+              </div>
+
+              <div class="card-body text-center">
+                <p class="card-text">{{ image.caption }}</p>
+              </div>
+
+            </div>
+          </div>
+        {% endfor %}
+      {% empty %}
+        <p>هیچ پروژه‌ای برای این تکنولوژی ثبت نشده است.</p>
+      {% endfor %}
+    </div>
+
+    <a href="{% url 'home' %}" class="btn btn-secondary mt-3">بازگشت به صفحه اصلی</a>
+  </div>
+
+  <!-- استایل اختصاصی -->
+  <style>
+    .image-wrapper {
+      height: 250px;               /* ارتفاع ثابت */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;   /* پس‌زمینه خاکستری ملایم */
+      border-bottom: 1px solid #ddd;
+    }
+
+    .image-wrapper img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;        /* کل عکس بدون برش نمایش داده شود */
+    }
+
+    .card {
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px); /* انیمیشن ملایم در هاور */
+    }
+  </style>
+{% endblock %}

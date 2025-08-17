@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}سایت من{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Vazir', sans-serif;
+        }
+        .header {
+            background-color: #222;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .footer {
+            background-color: #eee;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        /* اسکرول نرم */
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    {% block extra_css %}{% endblock %}
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" dir="ltr">
+      <div class="container">
+        <!-- دکمه Toggle برای موبایل -->
+        <button class="navbar-toggler order-lg-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="تغییر ناوبری">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- منو سمت راست -->
+        <div class="collapse navbar-collapse justify-content-end order-lg-2" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">درباره من</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#technologies-section">پروژه‌ها</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">تماس با من</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'interests' %}">علاقه‌مندی‌ها</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'education' %}">تحصیلات</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">صفحه اصلی</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+        {% block content %}
+        <!-- محتوای هر صفحه اینجا قرار می‌گیرد -->
+        {% endblock %}
+    </div>
+
+    <div class="footer">
+        &copy; 2025 - ساخته‌شده با Django 💻
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    {% block extra_js %}{% endblock %}
+
+</body>
+</html>
