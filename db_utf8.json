@@ -1,0 +1,328 @@
+[
+  {
+    "model": "portfolio.technology",
+    "pk": 1,
+    "fields": {
+      "name": "Python",
+      "image": "technology_images/python.jpg",
+      "description": "تمامی پروژه هایی که با پایتون کد نویسی شده است را میتوانید در ادامه ببینید.\r\nپروژه هایی مانند کدنویسی پایان نامه، کار با جنگو مانند ایجاد همین سایت و ...\r\nکافی است کلیک کنید."
+    }
+  },
+  {
+    "model": "portfolio.technology",
+    "pk": 2,
+    "fields": {
+      "name": "C#",
+      "image": "technology_images/c.jpg",
+      "description": "تمامی پروژه هایی که با سی شارپ کد نویسی شده است را میتوانید در ادامه ببینید.\r\nپروژه هایی مانند نرم افزارهای ارتباط با مشتریان ، مسیریابی و تمامی اپلیکیشن های دستکتاپ\r\nکافی است کلیک کنید."
+    }
+  },
+  {
+    "model": "portfolio.technology",
+    "pk": 3,
+    "fields": {
+      "name": "Java",
+      "image": "technology_images/java.jpg",
+      "description": "تمامی پروژه هایی که با جاوا کد نویسی شده است را میتوانید در ادامه ببینید.\r\nپروژه هایی مانند نرم افزارهای اندروید، پروژه های دانشجویی و کار در محیط اکلیپس\r\nکافی است کلیک کنید."
+    }
+  },
+  {
+    "model": "portfolio.technology",
+    "pk": 4,
+    "fields": {
+      "name": "GIS",
+      "image": "technology_images/gis.jpg",
+      "description": "رشته دانشگاهی من سیستم اطلاعات مکانی است. \r\nپروژه های بسیاری در این زمینه انجام شده از جمله مسیریابی، بهینه سازی، اختصاص فضا و آماده سازی نقشه ها  و تولید نقشه های پهنه بندی و ...\r\nبرای دیدن کافی است کلیک کنید."
+    }
+  },
+  {
+    "model": "portfolio.project",
+    "pk": 1,
+    "fields": {
+      "title": "پروژه های انجام شده در محیط ویژوال استدیو",
+      "description": "پروژه های دسکتاپ انجام شده در محیط ویژوال استدیو \r\nچند نمونه از پروژه ها و تصاویر آنها بارگذاری شده است.",
+      "github_link": "",
+      "technologies": "c# and sqlserver",
+      "technology": 2
+    }
+  },
+  {
+    "model": "portfolio.project",
+    "pk": 2,
+    "fields": {
+      "title": "web_gis",
+      "description": "develop website basis on gis for giving access to people to have better knowledge about their enviroments",
+      "github_link": "",
+      "technologies": "c# and arcgisserver",
+      "technology": 4
+    }
+  },
+  {
+    "model": "portfolio.project",
+    "pk": 3,
+    "fields": {
+      "title": "android_application",
+      "description": "توسعه نرم افزار اندروید به منظور بهبود وضعیت SDI  و یکپارچه سازی نقاط برداشت شده و پروفیل های طولی و عرضی کشوری در یک سرور مشخص بر اساس موقعیت جغرافیایی نقاط",
+      "github_link": "",
+      "technologies": "java",
+      "technology": 3
+    }
+  },
+  {
+    "model": "portfolio.project",
+    "pk": 4,
+    "fields": {
+      "title": "cellular_atumata",
+      "description": "پیش بینی و مدلسازی انتشار آتش سوزی در جنگل های ایران به کمک اتوماسیون سلولی",
+      "github_link": "",
+      "technologies": "gis",
+      "technology": 4
+    }
+  },
+  {
+    "model": "portfolio.project",
+    "pk": 5,
+    "fields": {
+      "title": "asib_paziri",
+      "description": "تهیه نقشه های آسیب پذیری برای شهر تهران",
+      "github_link": "",
+      "technologies": "gis",
+      "technology": 4
+    }
+  },
+  {
+    "model": "portfolio.project",
+    "pk": 6,
+    "fields": {
+      "title": "level_of_importance",
+      "description": "تعیین سطح اهمیت دارایی های مختلف منطقه های مختلف ایران",
+      "github_link": "",
+      "technologies": "GIS",
+      "technology": 4
+    }
+  },
+  {
+    "model": "portfolio.project",
+    "pk": 7,
+    "fields": {
+      "title": "makanyabi",
+      "description": "نقشه مکانیابی کاربری گردشگری شهر بندرعباس",
+      "github_link": "",
+      "technologies": "gis",
+      "technology": 4
+    }
+  },
+  {
+    "model": "portfolio.project",
+    "pk": 8,
+    "fields": {
+      "title": "datamining",
+      "description": "پروژه داده کاوی و فهم ارتباط میان داده ها به کمک پایتون",
+      "github_link": "",
+      "technologies": "python",
+      "technology": 1
+    }
+  },
+  {
+    "model": "portfolio.project",
+    "pk": 9,
+    "fields": {
+      "title": "telegram_bot",
+      "description": "ساخت بات تلگرام  به منظور فروش بیشتر و ناشناس برای صنف طلا فروش",
+      "github_link": "",
+      "technologies": "python",
+      "technology": 1
+    }
+  },
+  {
+    "model": "portfolio.project",
+    "pk": 10,
+    "fields": {
+      "title": "site",
+      "description": "طراحی بک اند سایت های مختلف از جمله همین سایت به کمک جنگو",
+      "github_link": "",
+      "technologies": "python",
+      "technology": 1
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 2,
+    "fields": {
+      "project": 1,
+      "image": "project_images/csharpproject_M2g4K4K.jpg",
+      "caption": "پروژه مسیریابی تحت دسکتاپ"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 3,
+    "fields": {
+      "project": 1,
+      "image": "project_images/logincrm.jpg",
+      "caption": "پروژه مدیریت ارتباط با مشتری شرکت الماس سبز کشاورز"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 4,
+    "fields": {
+      "project": 1,
+      "image": "project_images/crmpic.jpg",
+      "caption": "پروژه مدیریت ارتباط با مشتری شرکت الماس سبز کشاورز"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 5,
+    "fields": {
+      "project": 1,
+      "image": "project_images/crmkaktoos.jpg",
+      "caption": "پروژه مدیریت ارتباط با مشتری فروشگاه لوازم خانگی"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 6,
+    "fields": {
+      "project": 3,
+      "image": "project_images/login.jpg",
+      "caption": "صفحه ورودی اپلیکیشن که براساس احراز هویت دسترسی های مختلفی را به کاربران میدهد"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 7,
+    "fields": {
+      "project": 3,
+      "image": "project_images/mainmenu.jpg",
+      "caption": "یکی از صفحات اصلی اپلیکیشن که اجازه تکمیل اطلاعات توصیفی را به کاربران میدهد"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 8,
+    "fields": {
+      "project": 3,
+      "image": "project_images/points.jpg",
+      "caption": "نقاط برداشت شده و اطاعات مکان مبنای آن و نمایش آن ها روی نقشه به کمک کتابخنه های سیستم اطلاعات مکانی"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 9,
+    "fields": {
+      "project": 3,
+      "image": "project_images/define_project.jpg",
+      "caption": "تعریف پروژه جدید به منظور برداشت نقاط در مکان های جدید"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 10,
+    "fields": {
+      "project": 3,
+      "image": "project_images/define-keyboard.jpg",
+      "caption": "تعریف کیبورد تخصصی برای کاربران"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 11,
+    "fields": {
+      "project": 3,
+      "image": "project_images/process.jpg",
+      "caption": "بعد از وارد کردن اطلاعات توصیفی و مکانی مربوطه، امکان تحلیل و پردازش داده ها و نتیجه گیری وجود دارد"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 12,
+    "fields": {
+      "project": 4,
+      "image": "project_images/cellularautomata.jpg",
+      "caption": "پیش بینی و مدلسازی انتشار آتش سوزی در جنگل های ایران به کمک اتوماسیون سلولی"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 13,
+    "fields": {
+      "project": 5,
+      "image": "project_images/asibpaziri.jpg",
+      "caption": "تهیه نقشه های آسیب پذیری برای شهر تهران برای خطر زلزله به کمک لایه های مختلف و پیشنهاد راه های مسیریابی برای خروج و راه حل های مختلف"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 14,
+    "fields": {
+      "project": 6,
+      "image": "project_images/satheahamiat.jpg",
+      "caption": "تعیین سطح اهمیت دارایی های مختلف منطقه های مختلف ایران"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 15,
+    "fields": {
+      "project": 7,
+      "image": "project_images/makan.jpg",
+      "caption": "نقشه مکانیابی کاربری گردشگری شهر بندرعباس"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 16,
+    "fields": {
+      "project": 8,
+      "image": "project_images/datamining.jpg",
+      "caption": "پروژه داده کاوی و فهم ارتباط میان داده ها به کمک پایتون"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 17,
+    "fields": {
+      "project": 9,
+      "image": "project_images/bot.jpg",
+      "caption": "ساخت بات تلگرام  به منظور فروش بیشتر و ناشناس برای صنف طلا فروش"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 18,
+    "fields": {
+      "project": 10,
+      "image": "project_images/site.jpg",
+      "caption": "طراحی بک اند سایت های مختلف از جمله همین سایت به کمک جنگو"
+    }
+  },
+  {
+    "model": "portfolio.learningitem",
+    "pk": 1,
+    "fields": {
+      "title": "node.js",
+      "description": "node.js",
+      "image": "learning_items/node.jpg"
+    }
+  },
+  {
+    "model": "portfolio.learningitem",
+    "pk": 2,
+    "fields": {
+      "title": "next.js",
+      "description": "next.js",
+      "image": "learning_items/next.jpg"
+    }
+  },
+  {
+    "model": "portfolio.learningitem",
+    "pk": 3,
+    "fields": {
+      "title": "react",
+      "description": "react",
+      "image": "learning_items/react.jpg"
+    }
+  }
+]

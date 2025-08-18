@@ -1,0 +1,400 @@
+﻿[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-07-30T23:23:50.033Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "c#",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-07-30T23:25:11.143Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "web_gis",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-07-30T23:26:39.458Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "android_application",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-08-02T00:04:35.007Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "android_application",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Technologies\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-08-02T00:04:54.066Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "web_gis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Technologies\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-08-02T00:05:08.792Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "c#",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Technologies\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-08-02T00:06:24.521Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "c#",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-08-02T00:17:31.249Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "android_application",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-08-02T00:17:39.415Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "web_gis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-08-02T00:17:45.927Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "c#",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-08-06T11:30:37.204Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Python",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-08-06T11:32:38.066Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "C#",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-08-06T11:33:50.523Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Java",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-08-06T11:36:10.722Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "GIS",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-08-06T11:37:12.940Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Python",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-08-06T23:17:02.055Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "android_application",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Technology\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-08-06T23:17:09.445Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "web_gis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Technology\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-08-06T23:17:15.937Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "c#",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Technology\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-08-06T23:40:57.535Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Image for c#",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-08-06T23:42:52.081Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Image for c#",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Caption\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-08-06T23:47:13.761Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Image for c#",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-08-06T23:47:47.186Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Image for c#",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-08-06T23:50:17.591Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Image for c#",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-08-06T23:50:26.056Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Image for c#",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-08-06T23:51:26.090Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Image for c#",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-08-06T23:52:35.159Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Image for c#",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-08-15T13:40:48.393Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "c#",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"project image\", \"object\": \"Image for c#\", \"fields\": [\"Caption\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-08-15T13:41:37.241Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "c#",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"project image\", \"object\": \"Image for c#\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-08-15T13:41:48.625Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "c#",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"project image\", \"object\": \"Image for c#\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-08-15T13:42:17.731Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "c#",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"project image\", \"object\": \"Image for c#\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-08-15T13:47:22.365Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": 
