@@ -146,6 +146,17 @@
     }
   },
   {
+    "model": "portfolio.project",
+    "pk": 11,
+    "fields": {
+      "title": "بهینه سازی",
+      "description": "بهینه سازی چیدمان به منظور فروش بیشتر به کمک ژنتیک",
+      "github_link": "",
+      "technologies": "python",
+      "technology": 1
+    }
+  },
+  {
     "model": "portfolio.projectimage",
     "pk": 2,
     "fields": {
@@ -296,6 +307,15 @@
       "project": 10,
       "image": "project_images/site.jpg",
       "caption": "طراحی بک اند سایت های مختلف از جمله همین سایت به کمک جنگو"
+    }
+  },
+  {
+    "model": "portfolio.projectimage",
+    "pk": 19,
+    "fields": {
+      "project": 11,
+      "image": "project_images/zhenetic.jpg",
+      "caption": "بهینه سازی چیدمان به منظور فروش بیشتر به کمک ژنتیک  و داده کاوی"
     }
   },
   {
