@@ -37,3 +37,10 @@ node_modules/
 .pytest_cache/
 .coverage
 htmlcov/
+# Database exports
+db.json
+db_utf8.json
+
+# Archives
+media.zip
+*.zip
